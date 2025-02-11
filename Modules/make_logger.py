@@ -3,7 +3,7 @@ from logging import DEBUG, Formatter, StreamHandler, getLogger
 from rich.logging import RichHandler
 
 
-def make_logger(name):
+def make_logger(name: str):
     logger = getLogger(name)
     logger.setLevel(DEBUG)
     handler = RichHandler(rich_tracebacks=True, markup=True)

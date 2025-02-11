@@ -1,11 +1,11 @@
 from datetime import datetime
-from typing import Optional
+from typing import Final, Optional
 
 import requests
 
 from Modules.make_logger import make_logger
 
-HOST = "https://bsky.social/xrpc/"
+HOST: Final[str] = "https://bsky.social/xrpc/"
 
 
 class Bluesky:
